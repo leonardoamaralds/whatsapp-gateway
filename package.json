@@ -1,7 +1,15 @@
 {
   "name": "whatsapp-gateway",
   "version": "1.0.0",
-  "type": "module",    ← ADICIONE ESTA LINHA
+  "type": "module",
   "main": "src/server.js",
-  ...resto igual
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "whatsapp-web.js": "^1.23.0",
+    "qrcode": "^1.5.3",
+    "jsonwebtoken": "^9.0.2"
+  }
 }
